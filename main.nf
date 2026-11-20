@@ -9,7 +9,7 @@ process BAYESPRISM {
     tuple val(source), path(mixture)
     path reference
     output:
-    path '*'
+    path '*.{tsv,rds,log}'
     script:
     """
     export R_LIBS_USER="\$PWD/Rlib"
